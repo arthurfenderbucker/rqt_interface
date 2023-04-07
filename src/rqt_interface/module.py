@@ -474,7 +474,7 @@ class MyPlugin(Plugin):
     def alligned_cb(self, msg):
         if self.running_control:
             if self.count_aligned<self._widget.waypoints_list.count():
-                self._widget.waypoints_list.item(self.count_aligned).setBackground( QColor('#7fc97f'))
+                self._widget.waypoints_list.item(self.count_aligned+1).setBackground( QColor('#7fc97f'))
         self.count_aligned += 1
 
     def battery_cb(self,msg):
